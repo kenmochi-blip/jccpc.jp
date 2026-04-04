@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Under Construction</title>
+  <title>JCCPC | Under Construction</title>
   <meta name="description" content="現在サイトを準備中です。" />
   <style>
     :root {
       --bg: #ffffff;
       --text: #111111;
-      --sub: #666666;
-      --line: #e8e8e8;
+      --sub: #777777;
+      --line: #e5e5e5;
     }
 
     * {
@@ -20,12 +20,13 @@
     html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      min-height: 100%;
       background: var(--bg);
       color: var(--text);
       font-family:
         "Helvetica Neue",
         Arial,
-        "Hiragino Kaku Gothic ProN",
         "Hiragino Sans",
         "Yu Gothic",
         Meiryo,
@@ -37,25 +38,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
     }
 
-    .wrap {
+    .container {
       width: min(92vw, 760px);
-      padding: 48px 24px;
+      padding: 48px 24px 56px;
+      text-align: center;
     }
 
     .logo {
       display: block;
-      width: min(360px, 62vw);
+      width: min(360px, 64vw);
       height: auto;
       margin: 0 auto 40px;
     }
 
-    .status {
-      display: inline-block;
-      font-size: 12px;
-      letter-spacing: 0.22em;
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
       color: var(--sub);
       margin-bottom: 18px;
@@ -63,17 +63,17 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(28px, 4vw, 44px);
+      font-size: clamp(28px, 4vw, 42px);
       font-weight: 500;
       letter-spacing: 0.08em;
-      line-height: 1.35;
+      line-height: 1.4;
     }
 
     .divider {
-      width: 56px;
+      width: 52px;
       height: 1px;
       background: var(--line);
-      margin: 28px auto;
+      margin: 26px auto;
     }
 
     p {
@@ -81,15 +81,16 @@
       color: var(--sub);
       font-size: 14px;
       line-height: 1.9;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
     }
 
     @media (max-width: 640px) {
-      .wrap {
-        padding: 32px 20px;
+      .container {
+        padding: 32px 20px 44px;
       }
 
       .logo {
+        width: min(300px, 72vw);
         margin-bottom: 32px;
       }
 
@@ -100,19 +101,14 @@
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <img
-      class="logo"
-      src="https://www.genspark.ai/api/files/s/Gw7sK3Cq"
-      alt="JCCPC ロゴ"
-    />
-
-    <div class="status">Under Construction</div>
+  <main class="container">
+    <img class="logo" src="./image.png" alt="JCCPC ロゴ" />
+    <div class="label">Under Construction</div>
     <h1>現在、サイトを準備中です。</h1>
     <div class="divider"></div>
     <p>
       ご訪問いただきありがとうございます。<br />
-      公開まで、今しばらくお待ちください。
+      公開まで今しばらくお待ちください。
     </p>
   </main>
 </body>
